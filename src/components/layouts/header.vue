@@ -67,20 +67,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html"> Nous contacter </a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <i class="lni-user mr-2"></i>Moi
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Mes produits</a>
-                  <a class="dropdown-item" href="#">Mes offres</a>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="lni-user mr-2"></i>Moi </a>
               </li>
             </ul>
             <div class="post-btn">
