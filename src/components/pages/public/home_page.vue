@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!--search banner-->
+    <d-search-banner-area />
+    <!--end search banner-->
     <!--Categories section-->
     <d-categorie-section />
     <!--end Categories section-->
@@ -28,6 +31,7 @@ import dRecommendationsProductsSection from "@/components/sections/recommendatio
 import dAllProductsSection from "@/components/sections/all_products_section.vue";
 import dHowSection from "@/components/sections/how_it_work_section.vue";
 import dPricingTableSection from "@/components/sections/pricing_table_section.vue";
+
 export default {
   name: "HomePage",
   components: {

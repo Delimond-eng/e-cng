@@ -1,5 +1,23 @@
 <template>
   <div>
+    <div
+      class="page-header"
+      style="background: url(assets/img/background/bg-image.jpg); background-size: cover"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="product-title">Produits catégories</h2>
+              <ol class="breadcrumb">
+                <li><a href="">Acceuil /</a></li>
+                <li class="current">catégories</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="main-container section-padding" id="top">
       <div class="container">
         <div class="row">
@@ -492,6 +510,7 @@
 
 <script>
 export default {
+  name: "Categories",
   mounted() {
     this.$store.dispatch("scrollToTop");
   },

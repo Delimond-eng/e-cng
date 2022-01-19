@@ -7,7 +7,7 @@
           <div class="row">
             <div class="col-lg-7 col-md-5 col-xs-12">
               <ul class="list-inline">
-                <li><i class="lni-world"></i> CNG Acheter & vendre</li>
+                <li><i class="lni-world"></i> Wenze | Teka somba</li>
               </ul>
             </div>
             <div class="col-lg-5 col-md-7 col-xs-12">
@@ -43,12 +43,12 @@
               <span class="lni-menu"></span>
             </button>
             <a href="" class="navbar-brand"
-              ><H2 class="brand-logo">CNG <span>Acheter & vendre</span></H2></a
+              ><H2 class="brand-logo">Wenze <span>Teka | somba</span></H2></a
             >
           </div>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-center">
-              <li class="nav-item dropdown active">
+              <li class="nav-item dropdown">
                 <a class="nav-link" href=""> Acceuil </a>
               </li>
 
@@ -59,21 +59,17 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="category.html">
-                  Messages <span class="badge badge-danger">2</span></a
-                >
-              </li>
-
-              <li class="nav-item">
                 <a class="nav-link" href="contact.html"> Nous contacter </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="lni-user mr-2"></i>Moi </a>
+                <router-link class="nav-link" tag="a" :to="{ name: 'dashboard' }">
+                  <i class="lni-user mr-2"></i>Mon compte</router-link
+                >
               </li>
             </ul>
             <div class="post-btn">
-              <a class="btn btn-common" href="post-ads.html"
-                ><i class="lni-pencil-alt"></i> Vendre</a
+              <router-link :to="{ name: 'product_post' }" tag="a" class="btn btn-common"
+                ><i class="lni-pencil-alt"></i> Vendre</router-link
               >
             </div>
           </div>
@@ -81,16 +77,11 @@
 
         <ul class="mobile-menu">
           <li>
-            <a class="active" href="#"> Acceuil </a>
+            <a href="#"> Acceuil </a>
           </li>
           <li>
             <a href="#">Categories</a>
           </li>
-
-          <li>
-            <a href="#">Messages</a>
-          </li>
-
           <li>
             <a href="#">Nous contacter</a>
           </li>
@@ -101,11 +92,11 @@
             </a>
             <ul class="dropdown">
               <li>
-                <a href="#"><i class="lni-behance mr-2"></i>Mes produits</a>
+                <router-link tag="a" :to="{ name: 'dashboard' }"
+                  ><i class="lni-behance mr-2"></i>Mon compte</router-link
+                >
               </li>
-              <li>
-                <a href="#"><i class="lni-bookmark mr-2"></i>Offres</a>
-              </li>
+
               <li class="divider"></li>
               <li>
                 <router-link tag="a" :to="{ name: 'login' }"
@@ -119,12 +110,17 @@
               </li>
             </ul>
           </li>
+
+          <div class="post-btn">
+            <router-link
+              :to="{ name: 'product_post' }"
+              tag="a"
+              class="btn btn-common text-white"
+              ><i class="lni-pencil-alt"></i> Vendre</router-link
+            >
+          </div>
         </ul>
       </nav>
-
-      <!--search banner-->
-      <d-search-banner-area />
-      <!--end search banner-->
     </header>
     <!--End Header-->
   </div>

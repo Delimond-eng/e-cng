@@ -4,7 +4,7 @@ import { scroller } from "vue-scrollto/src/scrollTo";
 const actions = {
     scrollToTop() {
         const scrollTo = scroller();
-        scrollTo("#top");
+        scrollTo("#header-wrap");
     },
 };
 
