@@ -579,10 +579,8 @@ a.back-to-top:focus {
         will-change: transform;
         transform: translateZ(0);
         display: flex;
-        height: 60px;
-        box-shadow: 0 -2px 5px -2px rgba(51, 51, 51, 0.465);
+        height: 70px;
         background-color: #fff;
-        padding: 5px
     }
     .mobile-bottom-nav__item {
         flex-grow: 1;
@@ -597,8 +595,17 @@ a.back-to-top:focus {
         font-size: 14px;
         font-weight: 300;
     }
+    .mobile-bottom-nav__item a:focus,
+    .mobile-bottom-nav__item a:active {
+        color: rgb(11, 3, 56);
+        padding: 10px;
+        font-weight: 600;
+        background-color: #eee;
+    }
     .mobile-bottom-nav__item .mobile-bottom-nav__item--active {
         color: rgb(151, 95, 5);
+        padding: 10px;
+        font-weight: 600;
     }
     .mobile-bottom-nav__item-content {
         display: flex;
@@ -698,14 +705,14 @@ a.back-to-top:focus {
     .mobile-bottom-nav {
         position: fixed;
         bottom: 0;
+        border-top: 1px solid #d3d3d8;
         left: 0;
         right: 0;
         z-index: 1000;
         will-change: transform;
         transform: translateZ(0);
         display: flex;
-        height: 50px;
-        box-shadow: 0 -2px 5px -2px #333;
+        height: 60px;
         background-color: #fff;
     }
     .mobile-bottom-nav__item {
@@ -717,7 +724,7 @@ a.back-to-top:focus {
         justify-content: center;
     }
     .mobile-bottom-nav__item--active {
-        color: rgba(255, 157, 0, 0.835);
+        color: rgb(9, 11, 138);
     }
     .mobile-bottom-nav__item-content {
         display: flex;

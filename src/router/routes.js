@@ -42,6 +42,11 @@ const routes = [{
                 name: "product_post"
             },
             {
+                path: '/mobiles/messages',
+                component: UserMessages,
+                name: 'm-messages'
+            },
+            {
                 path: '/utilisateur/compte/',
                 component: UserDash,
                 name: "dashboard",

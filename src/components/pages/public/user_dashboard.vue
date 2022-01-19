@@ -34,7 +34,11 @@
                 <nav class="navdashboard">
                   <ul>
                     <li>
-                      <router-link :to="{ name: 'index' }" tag="a">
+                      <router-link
+                        :to="{ name: 'index' }"
+                        tag="a"
+                        @click.stop="scrollToContent()"
+                      >
                         <i class="lni-home"></i>
                         <span>Acceuil</span>
                       </router-link>
@@ -74,7 +78,7 @@
               </div>
             </aside>
           </div>
-          <div class="col-sm-12 col-md-8 col-lg-9">
+          <div class="col-sm-12 col-md-8 col-lg-9" id="content">
             <transition name="fade">
               <router-view />
             </transition>
@@ -86,6 +90,7 @@
 </template>
 
 <script>
+import { scroller } from "vue-scrollto/src/scrollTo";
 export default {
   mounted() {
     this.$nextTick(() => {
@@ -95,6 +100,10 @@ export default {
   methods: {
     disconnected() {
       this.$router.replace({ name: "login" });
+    },
+    scrollToContent() {
+      const scrollTo = scroller();
+      scrollTo("#content");
     },
   },
 };

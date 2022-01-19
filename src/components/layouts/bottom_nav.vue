@@ -1,20 +1,46 @@
 <template>
   <div>
     <nav class="mobile-bottom-nav">
-      <li
-        class="mobile-bottom-nav__item"
-        v-for="(item, index) in items"
-        :key="item.title"
-      >
+      <li class="mobile-bottom-nav__item">
         <a
-          @click.stop="selectedIndex = index"
-          href="#"
-          class="mobile-bottom-nav__item-content"
-          :class="selectedIndex === index ? 'mobile-bottom-nav__item--active' : ''"
+          href=""
+          class="mobile-bottom-nav__item-content mobile-bottom-nav__item--active"
         >
-          <i :class="item.icon"></i>
-          {{ item.title }}
+          <i class="lni-home"></i>
+          Accueil
         </a>
+      </li>
+
+      <li class="mobile-bottom-nav__item">
+        <router-link
+          :to="{ name: 'm-messages' }"
+          tag="a"
+          class="mobile-bottom-nav__item-content"
+        >
+          <i class="lni-envelope"></i>
+          Messages
+        </router-link>
+      </li>
+      <li class="mobile-bottom-nav__item">
+        <router-link
+          tag="a"
+          :to="{ name: 'product_post' }"
+          class="mobile-bottom-nav__item-content"
+        >
+          <i class="lni-pencil-alt"></i>
+          Vendre
+        </router-link>
+      </li>
+
+      <li class="mobile-bottom-nav__item">
+        <router-link
+          tag="a"
+          :to="{ name: 'dashboard' }"
+          class="mobile-bottom-nav__item-content"
+        >
+          <i class="lni-user"></i>
+          Mon compte
+        </router-link>
       </li>
     </nav>
   </div>

@@ -77,48 +77,24 @@
 
         <ul class="mobile-menu">
           <li>
-            <a href="#"> Acceuil </a>
+            <a href="#"><i class="lni-home mr-2"></i> Acceuil </a>
           </li>
           <li>
-            <a href="#">Categories</a>
+            <a href="#"><i class="lni-display mr-2"></i>Catégorie</a>
           </li>
           <li>
-            <a href="#">Nous contacter</a>
+            <a href="#"><i class="lni-phone-handset mr-2"></i>Nous contacter</a>
           </li>
-
           <li>
-            <a href="#" style="color: #df9307; font-weight: 900">
-              <i class="lni-user mr-2"></i> Utilisateur
-            </a>
-            <ul class="dropdown">
-              <li>
-                <router-link tag="a" :to="{ name: 'dashboard' }"
-                  ><i class="lni-behance mr-2"></i>Mon compte</router-link
-                >
-              </li>
-
-              <li class="divider"></li>
-              <li>
-                <router-link tag="a" :to="{ name: 'login' }"
-                  ><i class="lni-lock mr-2"></i>Connexion</router-link
-                >
-              </li>
-              <li>
-                <router-link tag="a" :to="{ name: 'register' }"
-                  ><i class="lni-pencil mr-2"></i>Créer compte</router-link
-                >
-              </li>
-            </ul>
-          </li>
-
-          <div class="post-btn">
-            <router-link
-              :to="{ name: 'product_post' }"
-              tag="a"
-              class="btn btn-common text-white"
-              ><i class="lni-pencil-alt"></i> Vendre</router-link
+            <router-link tag="a" :to="{ name: 'login' }"
+              ><i class="lni-lock mr-2"></i>Connexion</router-link
             >
-          </div>
+          </li>
+          <li>
+            <router-link tag="a" :to="{ name: 'register' }"
+              ><i class="lni-pencil mr-2"></i>Créer compte</router-link
+            >
+          </li>
         </ul>
       </nav>
     </header>
